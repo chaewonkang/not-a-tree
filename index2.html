@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Not a Tree — AI × 디자인 엔지니어링 스터디</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="테마 전환">
+    <span id="toggleLabel">Light</span>
+  </button>
+
+  <main>
+
+    <header class="site-header">
+      <p class="header-eyebrow">스터디 모집</p>
+      <h1 class="site-title">Not a Tree</h1>
+      <p class="site-subtitle">AI × 디자인 엔지니어링 스터디</p>
+    </header>
+
+    <section class="questions-section">
+      <p class="section-intro">이런 질문을 품고 있다면:</p>
+      <ol class="questions-list">
+        <li class="question-item">
+          <div class="question-number">01</div>
+          <div class="question-content">
+            <h2 class="question-text">CSS는 디자이너의 의도를 충분히 표현할 수 있을까요?</h2>
+            <p class="question-desc">색상 대비비, 타이포그래피 스케일, 레이아웃 간격 — 이것들은 캔버스 위 숫자가 아니라 접근성과 사용성의 조건입니다. 그런데 지금의 도구들은 이 조건을 사후 검수로 떠넘깁니다.</p>
+          </div>
+        </li>
+        <li class="question-item">
+          <div class="question-number">02</div>
+          <div class="question-content">
+            <h2 class="question-text">코딩 에이전트가 구현을 대부분 맡는다면, 명세는 어떻게 생겨야 할까요?</h2>
+            <p class="question-desc">에이전트는 빠르게 동작하는 코드를 만듭니다. 그러나 의도한 인터랙션은 좀처럼 만들지 못합니다. 문제는 구현이 아니라 명세입니다.</p>
+          </div>
+        </li>
+        <li class="question-item">
+          <div class="question-number">03</div>
+          <div class="question-content">
+            <h2 class="question-text">채팅창 다음에는 무엇이 올까요?</h2>
+            <p class="question-desc">텍스트 입력창이 AI 인터랙션의 전부일 리 없습니다. 이 패러다임들이 인터페이스 설계의 전제를 어떻게 바꿀지, 아직 아무도 모릅니다.</p>
+          </div>
+        </li>
+        <li class="question-item">
+          <div class="question-number">04</div>
+          <div class="question-content">
+            <h2 class="question-text">디자인 지식을 기계가 실행 가능한 형태로 어떻게 변환할 수 있을까요?</h2>
+            <p class="question-desc">색상 시스템, 레이아웃 원칙, 타이포그래피 규칙을 가이드 문서가 아닌 컴파일 가능한 언어로 만든다면 어떤 모습일까요.</p>
+          </div>
+        </li>
+      </ol>
+      <p class="questions-cta">이 질문들을 혼자 붙들고 있다면, 같이 생각해볼 사람들을 찾고 있습니다.</p>
+    </section>
+
+    <hr class="divider">
+
+    <section class="content-section">
+      <h2 class="section-title">무엇을 하는 모임인가요</h2>
+      <div class="prose">
+        <p>"AI 시대에 소프트웨어를, 특히 인터페이스를 가장 잘 만드는 방법"을 실무 차원에서 연구하고 실험하는 모임입니다.</p>
+        <p>출발점은 이론입니다. 도구를 잘 쓰기 위해서가 아니라, 도구가 전제하는 것들을 다시 묻기 위해서입니다. 색이 어떻게 지각되는지, 레이아웃이 어떻게 의미를 만드는지, 인터페이스가 인간의 인지와 어떻게 맞닿아 있는지 — 이런 질문들을 건너뛰면 도구는 늘 설명할 수 없는 방식으로 어긋납니다.</p>
+        <p>다만 이론화 단계에만 오래 머물지 않으려 합니다. 엉성한 이론 → 엉성한 도구 → 엉성한 스킬을 반복하면서 점점 다듬어가는 방식으로 운영합니다.</p>
+        <ul class="body-list">
+          <li>색채 지각론, 게슈탈트 심리학, 타이포그래피 역사 등 디자인의 이론적 토대를 다시 읽고, 이를 오늘의 AI 맥락에서 재해석합니다.</li>
+          <li>전통적인 디자인 지식(색상 시스템, 타이포그래피, 레이아웃)을 접근성·사용성을 시스템 차원에서 보장하는 <em>명세</em>로 변환하는 방법론을 실험합니다.</li>
+          <li>CSS를 대체·보강·제약하는 <em>컴파일 가능한 디자인 언어</em>를 만드는 시도를 합니다. 언어를 설계한다는 것이 곧 이론을 형식화하는 일이기도 합니다.</li>
+          <li>각자의 실무에서 AI 에이전트 활용 시 발생한 <em>명세-구현 불일치</em> 사례를 공유하고, 반복되는 패턴을 찾아 도구화합니다.</li>
+          <li>채팅 UI를 넘어서는 AI-인간 인터랙션 패러다임 — 멀티모달, 공간 컴퓨팅, 비언어적 인터랙션 — 을 HCI와 인지과학의 시각에서 스터디합니다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="content-section">
+      <h2 class="section-title">무엇을 만드나요</h2>
+      <div class="prose">
+        <p>매 세션 "실무에 바로 적용 가능한 것 하나"를 의무 산출물로 냅니다. 그리고 그것을 코딩 에이전트 마켓플레이스에 올릴 수 있는 형태로 다듬어 공개 발행합니다.</p>
+        <div class="output-grid">
+          <div class="output-card">
+            <span class="output-tag">인공 언어 / 스크립트</span>
+            <p>디자인 의도를 컴파일 가능한 형태로 표현하는 언어 실험. 예를 들어 "배경색과 텍스트 색의 대비비가 4.5 미만이면 빌드를 거부하는" 명세 언어.</p>
+          </div>
+          <div class="output-card">
+            <span class="output-tag">자동화 도구</span>
+            <p>라이트/다크, 고대비, 색각이상 등 조합을 검사하는 접근성 스크립트.</p>
+          </div>
+          <div class="output-card">
+            <span class="output-tag">스킬 (SKILL.md)</span>
+            <p>반복적으로 발생하는 명세-구현 불일치 패턴을 피하는 가이드 — 에이전트가 바로 실행할 수 있는 형태로 정리한 것.</p>
+          </div>
+          <div class="output-card">
+            <span class="output-tag">케이스 스터디 노트</span>
+            <p>실무에서 발생한 불일치 사례와 해결법 기록. 비평 세션에서 나온 반론과 반론에 대한 반론까지 포함합니다.</p>
+          </div>
+        </div>
+        <blockquote class="pull-quote">
+          "우리가 뭘 배웠다"를 정리하는 대신,<br>
+          "우리가 배운 걸 남도 바로 쓸 수 있게" 만드는 것이 목표입니다.
+        </blockquote>
+        <p>스킬이 실제로 남의 프로젝트에서 깨지면, 그게 가장 정직한 피드백입니다.</p>
+        <p>3개월(6세션)이 지나면 발행한 스킬과 그 과정을 묶어 짧은 에세이나 발표자료로 정리해 공개할 수 있습니다. 에세이는 "왜 이런 도구들을 만들게 됐는가"의 서문 역할을 하게 됩니다.</p>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="content-section">
+      <h2 class="section-title">어떻게 운영하나요</h2>
+      <div class="prose">
+        <div class="meta-row">
+          <div class="meta-block">
+            <span class="meta-label">규모</span>
+            <span class="meta-val">3–5명</span>
+          </div>
+          <div class="meta-block">
+            <span class="meta-label">주기</span>
+            <span class="meta-val">격주 1회, 2시간</span>
+          </div>
+        </div>
+        <p>타이포그래피/컬러 사이언스, HCI, 프론트엔드, 코딩 에이전트 활용을 한 사람이 다 채우기보다 디자인 배경과 엔지니어링 배경이 섞이는 편이 좋습니다. 서로 다른 강점이 반론과 관점 다양성을 만듭니다.</p>
+        <div class="timeline-box">
+          <p class="timeline-label">세션 구조</p>
+          <div class="timeline">
+            <div class="tl-item">
+              <span class="tl-time">20분</span>
+              <div class="tl-content">
+                <strong>사례 공유</strong>
+                <p>지난 2주간 실무에서 부딪힌 명세-구현 불일치 사례</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-time">40분</span>
+              <div class="tl-content">
+                <strong>딥다이브</strong>
+                <p>그날의 주제 — 고대비 모드 자동 검사 도구 비교, 채팅이 아닌 AI 인터랙션 사례 리서치 등</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-time">40분</span>
+              <div class="tl-content">
+                <strong>상호 비평</strong>
+                <p>각자 만든 것에 대한 반론 중심 비평</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-time">20분</span>
+              <div class="tl-content">
+                <strong>다음 과제</strong>
+                <p>다음 세션 과제 및 스킬화 후보 지정</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>발제자는 순환제입니다. 주제는 8–10개를 미리 정해두고 격주로 하나씩 소화합니다. 색상 시스템 → 레이아웃 시스템 → 명세 언어 → 멀티모달 인터랙션 순으로 쌓아가는 식입니다.</p>
+        <p class="aside-note">6세션 후 계속할지, 발행한 스킬과 에세이로 정리하고 마무리할지 결정합니다. 흐지부지 이어지는 스터디보다 선명하게 끝나는 스터디가 낫기 때문입니다.</p>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="content-section">
+      <h2 class="section-title">이런 분과 함께하고 싶습니다</h2>
+      <div class="prose">
+        <ul class="fit-list fit-yes">
+          <li>실무에서 AI 코딩 에이전트를 이미 쓰고 있거나, 진지하게 쓰려는 분</li>
+          <li>디자인 또는 엔지니어링 중 하나에 깊이가 있는 분 (둘 다일 필요는 없습니다)</li>
+          <li>이론과 실험을 오가는 데 거부감이 없는 분 — 인문학적 질문과 실행 가능한 스크립트가 같은 테이블에 있어도 괜찮은 분</li>
+          <li>자신이 만든 것에 대해 반론을 받을 수 있는 분</li>
+          <li>리서치로 끝내지 않고, 작더라도 실제로 만드는 분</li>
+        </ul>
+        <p class="fit-not-label">반대로, 다음에 해당하면 잘 맞지 않을 수 있습니다:</p>
+        <ul class="fit-list fit-no">
+          <li>이론이 충분히 정립된 후에 실험하고 싶은 분</li>
+          <li>좋은 분위기의 네트워킹이 주목적인 분</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="content-section apply-section">
+      <h2 class="section-title">지원</h2>
+      <div class="apply-box">
+        <p>간단한 자기소개와 함께 이 질문 중 하나에 답해서 보내주세요.</p>
+        <div class="apply-qs">
+          <p>최근 실무나 프로젝트에서 AI 에이전트를 쓰다가 명세와 구현이 어긋난 경험이 있었나요? 어떤 상황이었나요?</p>
+          <div class="apply-or">or</div>
+          <p>위의 네 가지 질문 중 가장 오래 붙들고 있는 게 무엇인가요?</p>
+        </div>
+        <a href="#" class="apply-btn">[연락처 / 오픈채팅 / 폼 링크]</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Not a Tree &mdash; 2025</p>
+    </footer>
+
+  </main>
+
+  <script>
+    const THEME_KEY = 'nat-theme-v2';
+    const html = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
+    const label = document.getElementById('toggleLabel');
+
+    function applyTheme(theme) {
+      html.setAttribute('data-theme', theme);
+      localStorage.setItem(THEME_KEY, theme);
+      label.textContent = theme === 'dark' ? 'Light' : 'Dark';
+    }
+
+    function getInitialTheme() {
+      const stored = localStorage.getItem(THEME_KEY);
+      if (stored) return stored;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    toggle.addEventListener('click', () => {
+      applyTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+
+    applyTheme(getInitialTheme());
+  </script>
+</body>
+</html>
