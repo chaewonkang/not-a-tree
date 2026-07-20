@@ -530,7 +530,7 @@ a {
 .apply-qs {
   background: var(--bg-2);
   border-radius: 2px;
-  padding: 1.5rem;
+  padding: 20px 32px;
   display: flex;
   flex-direction: column;
   gap: 0;
