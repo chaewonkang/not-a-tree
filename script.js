@@ -52,7 +52,7 @@ document.querySelectorAll('[data-animate]').forEach((el) => {
 
 // TOC active section tracking
 const tocLinks = document.querySelectorAll('.toc-link');
-const sections = document.querySelectorAll('#s-questions, #s-about, #s-output, #s-how, #s-fit, #s-apply');
+const sections = document.querySelectorAll('#s-questions, #s-about, #s-output, #s-how, #s-fit');
 
 let activeSectionId = null;
 
