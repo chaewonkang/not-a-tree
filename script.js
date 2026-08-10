@@ -68,7 +68,9 @@ const tocObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.25, rootMargin: '-10% 0px -60% 0px' }
+  // Thin "active line" at ~35% from top: a section is active whenever it
+  // crosses this line. threshold 0 keeps it reliable for tall sections (03).
+  { threshold: 0, rootMargin: '-35% 0px -65% 0px' }
 );
 
 sections.forEach((sec) => tocObserver.observe(sec));

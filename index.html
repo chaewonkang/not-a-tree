@@ -103,7 +103,7 @@
           </div>
           <div class="meta-block">
             <span class="meta-label">일정</span>
-            <span class="meta-val">둘째 주 목요일/넷째 주 토요일</span>
+            <span class="meta-val">격주 목요일</span>
           </div>
           <div class="meta-block">
             <span class="meta-label">시간</span>
@@ -114,7 +114,124 @@
             <span class="meta-val">OTP Company <br/>(서울시 중구 퇴계로6가길 34, 1/2층)</span>
           </div>
         </div>
-        <p>1기는 6개월간 운영되며, 매월 둘째/넷째 주 오프라인으로 만납니다. 한 달에 하나씩 다양한 주제에 대한 책을 읽고, 이에 맞는 산출물을 만들고, Not a Tree 공식 웹사이트에 모두 함께 발행합니다.</p>
+        <p>1기는 6개월간 운영되며, 격주 목요일 오프라인으로 만납니다. 한 달에 하나씩 다양한 주제에 대한 책을 읽고, 이에 맞는 산출물을 만들고, Not a Tree 공식 웹사이트에 모두 함께 발행합니다.</p>
+
+        <dl class="principles">
+          <div>
+            <dt class="principle-term">초석</dt>
+            <dd class="principle-desc">시작에 앞서 각자의 주제를 하나 정합니다. 완성된 결론이 아니라, 이후의 변화를 재기 위한 기준점입니다.</dd>
+          </div>
+          <div>
+            <dt class="principle-term">발제</dt>
+            <dd class="principle-desc">여섯 명이 한 달에 한 명씩, 6개월 동안 한 번씩 발제합니다.</dd>
+          </div>
+          <div>
+            <dt class="principle-term">교차 영향</dt>
+            <dd class="principle-desc">한 사람이 발제하면 나머지 다섯 명은 그 발제에서 개념, 질문, 사례, 제약 중 하나 이상을 자신의 프로젝트에 연결합니다. </dd>
+          </div>
+          <div>
+            <dt class="principle-term">기록</dt>
+            <dd class="principle-desc">매 회차 네 가지를 남깁니다. 
+              <br/>— 지금의 중심 명제
+              <br/>— 이번 발제에서 가져온 것
+              <br/>— 그것이 기존 전제와 충돌한 지점
+              <br/>— 다음 조사와 실험에서 실제로 달라지는 것</dd>
+          </div>
+        </dl>
+
+        <figure class="study-diagram">
+          <svg viewBox="0 0 680 470" role="img" aria-labelledby="d-title d-desc">
+            <title id="d-title">누적 교차영향형 스터디 구조</title>
+            <desc id="d-desc">여섯 명이 각자 초석을 세우고 1번부터 6번까지 한 번씩 발제하며, 매 발제마다 나머지 다섯 명이 영향을 받아 총 서른 번의 교차 영향이 발생합니다.</desc>
+
+            <!-- 세로 축: 각 참여자의 중심 명제 -->
+            <g stroke="currentColor" stroke-width="1.2" opacity="0.9">
+              <line x1="160" y1="66" x2="160" y2="392"/>
+              <line x1="250" y1="66" x2="250" y2="392"/>
+              <line x1="340" y1="66" x2="340" y2="392"/>
+              <line x1="430" y1="66" x2="430" y2="392"/>
+              <line x1="520" y1="66" x2="520" y2="392"/>
+              <line x1="610" y1="66" x2="610" y2="392"/>
+            </g>
+            <!-- 가로 회차선 -->
+            <g stroke="currentColor" stroke-width="1" opacity="0.35">
+              <line x1="160" y1="110" x2="610" y2="110"/>
+              <line x1="160" y1="158" x2="610" y2="158"/>
+              <line x1="160" y1="206" x2="610" y2="206"/>
+              <line x1="160" y1="254" x2="610" y2="254"/>
+              <line x1="160" y1="302" x2="610" y2="302"/>
+              <line x1="160" y1="350" x2="610" y2="350"/>
+            </g>
+            <!-- 초석: 상단 사각형 -->
+            <g fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="145" y="42" width="30" height="24"/>
+              <rect x="235" y="42" width="30" height="24"/>
+              <rect x="325" y="42" width="30" height="24"/>
+              <rect x="415" y="42" width="30" height="24"/>
+              <rect x="505" y="42" width="30" height="24"/>
+              <rect x="595" y="42" width="30" height="24"/>
+            </g>
+            <!-- 결과물: 하단 마름모 -->
+            <g fill="currentColor">
+              <polygon points="160,383 171,394 160,405 149,394"/>
+              <polygon points="250,383 261,394 250,405 239,394"/>
+              <polygon points="340,383 351,394 340,405 329,394"/>
+              <polygon points="430,383 441,394 430,405 419,394"/>
+              <polygon points="520,383 531,394 520,405 509,394"/>
+              <polygon points="610,383 621,394 610,405 599,394"/>
+            </g>
+            <!-- 회차별 점: 발제자 큰 점, 수용자 작은 점 -->
+            <circle cx="160" cy="110" r="7" fill="currentColor"/>
+            <circle cx="250" cy="110" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="340" cy="110" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="430" cy="110" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="520" cy="110" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="610" cy="110" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="160" cy="158" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="250" cy="158" r="7" fill="currentColor"/>
+            <circle cx="340" cy="158" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="430" cy="158" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="520" cy="158" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="610" cy="158" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="160" cy="206" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="250" cy="206" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="340" cy="206" r="7" fill="currentColor"/>
+            <circle cx="430" cy="206" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="520" cy="206" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="610" cy="206" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="160" cy="254" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="250" cy="254" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="340" cy="254" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="430" cy="254" r="7" fill="currentColor"/>
+            <circle cx="520" cy="254" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="610" cy="254" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="160" cy="302" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="250" cy="302" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="340" cy="302" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="430" cy="302" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="520" cy="302" r="7" fill="currentColor"/>
+            <circle cx="610" cy="302" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="160" cy="350" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="250" cy="350" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="340" cy="350" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="430" cy="350" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="520" cy="350" r="3.5" fill="currentColor" opacity="0.55"/>
+            <circle cx="610" cy="350" r="7" fill="currentColor"/>
+            <!-- 좌측 라벨 -->
+            <g fill="currentColor" opacity="0.7" font-size="13">
+              <text x="20" y="59">초석</text>
+              <text x="20" y="114">1회차</text>
+              <text x="20" y="162">2회차</text>
+              <text x="20" y="210">3회차</text>
+              <text x="20" y="258">4회차</text>
+              <text x="20" y="306">5회차</text>
+              <text x="20" y="354">6회차</text>
+              <text x="20" y="398">결과물</text>
+            </g>
+          </svg>
+          <figcaption class="diagram-caption">여섯 개의 축은 유지되고, 영향은 회차마다 누적됩니다.</figcaption>
+          <p class="diagram-note">여섯 명이 각자 초석을 세우고 1번부터 6번까지 한 번씩 발제하며, 매 발제마다 나머지 다섯 명이 영향을 받아 총 서른 번의 교차 영향이 발생하고, 최종적으로 여섯 개의 결과물이 남는 구조.</p>
+        </figure>
 
         <div class="timeline-box">
           <p class="timeline-label">월별 흐름</p>
@@ -127,7 +244,7 @@
               </div>
             </div>
             <div class="tl-item">
-              <span class="tl-time">둘째 주 목요일</span>
+              <span class="tl-time">목요일</span>
               <div class="tl-content">
                 <strong>세션 1 (오프라인 모임)</strong>
                 <p>만나서 서로의 에세이를 공유하고, 상호 비평합니다.<br/>
@@ -143,7 +260,7 @@
               </div>
             </div>
             <div class="tl-item">
-              <span class="tl-time">마지막 토요일</span>
+              <span class="tl-time">목요일</span>
               <div class="tl-content">
                 <strong>세션 2 (오프라인 모임)</strong>
                 <p>서로의 진행 상황과 결과물을 공유하고 비평합니다.<br/>
@@ -161,6 +278,10 @@
       <h2 class="section-title"><span class="sec-num">04</span>무엇을 만드나요?</h2>
       <div class="prose">
         <p>세션을 반복하며, 다음의 것들을 구체화합니다. 엉성한 이론에서 엉성한 도구, 그리고 엉성한 스킬을 반복하면서 점점 다듬어가는 방식으로 운영합니다.</p>
+        <div class="output-card output-solo">
+          <span class="output-tag">기록</span>
+          <p>하나의 생각이 여섯 명의 발제를 통과하며 어떻게 번역되고 변형되었는지의 기록입니다.</p>
+        </div>
         <p>아래 네 가지는 서로 배타적인 분류가 아니라, 하나의 결과물이 취할 수 있는 형태들입니다.</p>
         <div class="output-grid">
           <div class="output-card">

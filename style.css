@@ -298,6 +298,70 @@ a {
   color: var(--text-muted);
 }
 
+/* full-width single card outside the grid (04 기록) */
+.output-solo {
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  margin: 0.5rem 0;
+}
+
+/* =========================================
+   PRINCIPLES (03 운영 원리)
+   ========================================= */
+
+.principles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.principle-term {
+  font-family: var(--f-mono);
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.principle-desc {
+  color: var(--text-muted);
+}
+
+/* =========================================
+   STUDY DIAGRAM (03 도식)
+   ========================================= */
+
+.study-diagram {
+  margin: 0.5rem 0;
+  color: var(--text);
+}
+
+.study-diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.study-diagram text {
+  font-family: var(--f-mono);
+}
+
+.diagram-caption {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+}
+
+.diagram-note {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-top: 0.4rem;
+}
+
 /* =========================================
    PULL QUOTE
    ========================================= */
